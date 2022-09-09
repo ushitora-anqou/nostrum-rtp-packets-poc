@@ -126,8 +126,8 @@ defmodule AudioPlayerConsumer do
 
   def handle_event({:VOICE_INCOMING_PACKET, {{sequence, _, _}, data}, _state}) do
     Logger.debug("VOICE INCOMING PACKET: #{inspect(data)}")
-    # filename = "/tmp/foobar/#{:erlang.unique_integer([:monotonic, :positive])}"
-    filename = "/tmp/foobar/#{sequence}"
+    filename = "/tmp/foobar/#{sequence}_#{:erlang.unique_integer([:monotonic, :positive])}"
+    # filename = "/tmp/foobar/#{sequence}"
     File.write!(filename, data, [:write, :binary])
   end
 
