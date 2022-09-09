@@ -10,15 +10,11 @@ Prepare two tokens for Discord in advance.
 $ mkdir /tmp/foobar
 
 $ mix deps.get
-$ vim config/runtime.exs
-# Set TOKEN1
-$ iex -S mix
+$ DISCORD_TOKEN='TOKEN1' iex -S mix
 # Run (TOKEN1's) /summon and /play URL on Discord
 
 # On another terminal
-$ vim config/runtime.exs
-# Set TOKEN2
-$ iex -S mix
+$ DISCORD_TOKEN='TOKEN2' iex -S mix
 # Run (TOKEN2's) /summon and /listen on Discord, and abort it quickly by C^g q.
 # Incoming RTP packets are stored in `/tmp/foobar`
 
