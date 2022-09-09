@@ -4,7 +4,7 @@ This code is forked from [a nostrum's example](https://github.com/Kraigie/nostru
 
 ## Usage
 
-Prepare two tokens for Discord.
+Prepare two tokens for Discord in advance.
 
 ```
 $ mkdir /tmp/foobar
@@ -20,7 +20,7 @@ $ vim config/runtime.exs
 # Set TOKEN2
 $ iex -S mix
 # Run (TOKEN2's) /summon and /listen on Discord, and abort it quickly by C^g q.
-# Incoming voice are stored in `/tmp/foobar`
+# Incoming RTP packets are stored in `/tmp/foobar`
 
 # Check if /tmp/foobar/* are correct opus files. For example:
 $ cd /tmp/foobar
