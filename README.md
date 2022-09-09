@@ -1,6 +1,6 @@
 # Test code for nostrum's handling of RTP packets 
 
-This code uses the patched nostrum.
+This code is forked from [a nostrum's example](https://github.com/Kraigie/nostrum/blob/5d22693f62f7cfab394637c70b1e52eaa7da7132/examples/audio_player_example.ex). This code uses [this patch](https://github.com/Kraigie/nostrum/pull/438).
 
 ## Usage
 
